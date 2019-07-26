@@ -6,29 +6,44 @@
   object name, diet, weight, length, period
 */
 
-// tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
+var dino1 = {object_name: 'tyrannosaurus', 
+             diet: 'carnivorous', 
+             weight: '7000kg', 
+             length: '12m', 
+             period: 'Late Cretaceous',
+             roar: function(){
+                return ("RAWERSRARARWERSARARARRRR!")
+  }};
+            
+var dino2 = {object_name: 'stegosaurus', 
+             diet: 'herbivorous', 
+             weight: '2000kg', 
+             length: '9m', 
+             period: 'Late Jurassic'};
 
-// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
-// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+var dino3 = {object_name: 'velociraptor', 
+            diet: 'carnivorous', 
+            weight: '15kg', 
+            length: '1.8m', 
+            period: 'Late Cretaceous'};
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(dino1.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dino3.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dino2.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(dino1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(dino1.roar);
 
 
 // ==== Arrays ====
@@ -72,7 +87,7 @@ console.log(uni);
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
 
-zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
+const zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":"Canis aureus","state":"Kentucky"},
 {"animal_name":"Screamer, southern","population":1,"scientific_name":"Chauna torquata","state":"Alabama"},
 {"animal_name":"White spoonbill","population":8,"scientific_name":"Platalea leucordia","state":"Georgia"},
 {"animal_name":"White-cheeked pintail","population":1,"scientific_name":"Anas bahamensis","state":"Oregon"},
